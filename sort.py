@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
 
 """
 
@@ -18,7 +19,7 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-#   Version: 1.0.0 - Build 3.5
+#   1.0.1 - Build 1.1
 
 #   special chars are the first priority and are sorted first.
 #   numbers are the second priority and are sorted second.
@@ -30,28 +31,33 @@
 
 
 author = "Hemanya Sharma"
-version = "1.0.0 - Build 3.5"
+version = "1.0.1 - Build 1.1"
 yelp = "Program to alphabetically sort the words from a string provided by the user"
 
 class colors:
     ENDC = '\033[m'
     GREEN = '\033[32m'
+    RED = '\033[31m'
 
 def sort (yer_word):
     num = 1
-    # breakdown the string into a list of words
-    words = yer_word.split()
-    # sort the list
-    words.sort()
-    # display the sorted words
-    print("The sorted words are:\n")
+    words = yer_word.split() # Breakdown the string into a list of words
+    words.sort() # Sort the words
+    print("The sorted words are:\n") # Display the sorted words
     for sort in words:
-       print( str(num) + "." , colors.GREEN + sort , colors.ENDC )
+       print (str(num) + "." , colors.GREEN + sort , colors.ENDC)
        num = num + 1
+    return
+
 
 def mains ():
     yer_word = input("Enter the words to sort: ")
-    sort (yer_word)
+    if  len(yer_word.split()) > 0:
+        sort (yer_word)
+        return "CALLED"
+    else:
+        print (colors.RED + "ERROR: Enter something to sort! 😒" , colors.ENDC)
+        return "ERROR"
 
 
 if (__name__ == '__main__'):
