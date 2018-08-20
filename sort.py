@@ -18,7 +18,7 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-#   Version: 1.0.0 - Build 3.4
+#   Version: 1.0.0 - Build 3.5
 
 #   special chars are the first priority and are sorted first.
 #   numbers are the second priority and are sorted second.
@@ -30,8 +30,8 @@
 
 
 author = "Hemanya Sharma"
-version = "1.0.0 - Build 3.4"
-yelp = "Program to sort alphabetically the words from a string provided by the user"
+version = "1.0.0 - Build 3.5"
+yelp = "Program to alphabetically sort the words from a string provided by the user"
 
 class colors:
     ENDC = '\033[m'
