@@ -1,4 +1,33 @@
-<pre>Enter the words to sort: ` 1 2 3 4 5 6 7 8 9 0 - = q w e r t y u i o p [ ] \ a s d f g h j k l ; &apos; z x c v b n m , . / ! @ # $ % ^ &amp; * ( ) _ + Q W E R T Y U I O P { } | A S D F G H J K L : &quot; Z X C V B N M &lt; &gt; ?
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>WordSorter Example</title>
+
+    <style>
+      pre {
+        padding: 10px;
+        color: #ffffff;
+        background-color: #292929;
+        line-height: 20px;
+        font-family: 'Ubuntu Mono';
+        border-radius: 12px;
+      }
+
+      body {
+        background-color: #2E2E2E;
+      }
+
+    </style>
+  </head>
+
+  <body onload="typeWriter()">
+
+
+    <div style="text-align: center; font-family: 'Ubuntu';"><h1>WordSorter</h1></div>
+
+
+    <pre>Enter the words to sort: <font id='demo'></font>
 The sorted words are:
 
 1. <font color="#4E9A06">! </font>
@@ -95,3 +124,22 @@ The sorted words are:
 92. <font color="#4E9A06">| </font>
 93. <font color="#4E9A06">} </font>
 </pre>
+
+    <script>
+      var i = 0;
+      var txt = '` 1 2 3 4 5 6 7 8 9 0 - = q w e r t y u i o p [ ] \ a s d f g h j k l ; \' z x c v b n m , . / ! @ # $ % ^ & * ( ) _ + Q W E R T Y\nU I O P { } | A S D F G H J K L : " Z X C V B N M < > ?'; /* The text */
+      var speed = 10; /* The speed/duration of the effect in milliseconds */
+
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("demo").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+
+    </script>
+  </body>
+
+
+</html>
