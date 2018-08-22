@@ -19,19 +19,19 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-#   1.0.1 - Build 1.1
+#   Version: 1.0.1 - Build 1.2
 
 #   special chars are the first priority and are sorted first.
 #   numbers are the second priority and are sorted second.
-#   alphabets are the third priority and are sorted third. (UPPERCASE are sorted before lowercase)
+#   alphabets are the third priority and are sorted third (UPPERCASE are sorted before lowercase).
 
-#   names are to be entered as 'Hemanya-Sharma' or 'Bill-Gates' not 'bILL-gAtEs' or 'hemanyA sHarMA'
+#   names are to be entered as 'Hemanya-Sharma' or 'Rob-Mctodd' not 'rob-McTodd' or 'hemanyA sHarMA'
 
 """
 
 
 author = "Hemanya Sharma"
-version = "1.0.1 - Build 1.1"
+version = "1.0.1 - Build 1.2"
 yelp = "Program to alphabetically sort the words from a string provided by the user"
 
 class colors:
@@ -54,10 +54,10 @@ def mains ():
     yer_word = input("Enter the words to sort: ")
     if  len(yer_word.split()) > 0:
         sort (yer_word)
-        return "CALLED"
+        return "Called"
     else:
-        print (colors.RED + "ERROR: Enter something to sort! 😒" , colors.ENDC)
-        return "ERROR"
+        print (colors.RED + "ERROR: Enter some words to sort! 😒" , colors.ENDC)
+        return "Error"
 
 
 if (__name__ == '__main__'):
