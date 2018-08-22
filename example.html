@@ -18,116 +18,122 @@
         background-color: #2E2E2E;
       }
 
+      font {
+        color: #4E9A06;
+      }
+
     </style>
   </head>
 
-  <body onload="typeWriter()">
+  <body OnLoad="typeWriter()">
 
 
-    <div style="text-align: center; font-family: 'Ubuntu';"><h1>WordSorter</h1></div>
+    <div style="text-align: center; font-family: 'Ubuntu';">
+      <h1>WordSorter</h1>
+    </div>
 
 
-    <pre>Enter the words to sort: <font id='demo'></font>
+    <pre>Enter the words to sort: <font id='demo' style="color: #ffffff;"></font>
 The sorted words are:
 
-1. <font color="#4E9A06">! </font>
-2. <font color="#4E9A06">&quot; </font>
-3. <font color="#4E9A06"># </font>
-4. <font color="#4E9A06">$ </font>
-5. <font color="#4E9A06">% </font>
-6. <font color="#4E9A06">&amp; </font>
-7. <font color="#4E9A06">&apos; </font>
-8. <font color="#4E9A06">( </font>
-9. <font color="#4E9A06">) </font>
-10. <font color="#4E9A06">* </font>
-11. <font color="#4E9A06">+ </font>
-12. <font color="#4E9A06">, </font>
-13. <font color="#4E9A06">- </font>
-14. <font color="#4E9A06">. </font>
-15. <font color="#4E9A06">/ </font>
-16. <font color="#4E9A06">0 </font>
-17. <font color="#4E9A06">1 </font>
-18. <font color="#4E9A06">2 </font>
-19. <font color="#4E9A06">3 </font>
-20. <font color="#4E9A06">4 </font>
-21. <font color="#4E9A06">5 </font>
-22. <font color="#4E9A06">6 </font>
-23. <font color="#4E9A06">7 </font>
-24. <font color="#4E9A06">8 </font>
-25. <font color="#4E9A06">9 </font>
-26. <font color="#4E9A06">: </font>
-27. <font color="#4E9A06">; </font>
-28. <font color="#4E9A06">&lt; </font>
-29. <font color="#4E9A06">= </font>
-30. <font color="#4E9A06">&gt; </font>
-31. <font color="#4E9A06">? </font>
-32. <font color="#4E9A06">@ </font>
-33. <font color="#4E9A06">A </font>
-34. <font color="#4E9A06">B </font>
-35. <font color="#4E9A06">C </font>
-36. <font color="#4E9A06">D </font>
-37. <font color="#4E9A06">E </font>
-38. <font color="#4E9A06">F </font>
-39. <font color="#4E9A06">G </font>
-40. <font color="#4E9A06">H </font>
-41. <font color="#4E9A06">I </font>
-42. <font color="#4E9A06">J </font>
-43. <font color="#4E9A06">K </font>
-44. <font color="#4E9A06">L </font>
-45. <font color="#4E9A06">M </font>
-46. <font color="#4E9A06">N </font>
-47. <font color="#4E9A06">O </font>
-48. <font color="#4E9A06">P </font>
-49. <font color="#4E9A06">Q </font>
-50. <font color="#4E9A06">R </font>
-51. <font color="#4E9A06">S </font>
-52. <font color="#4E9A06">T </font>
-53. <font color="#4E9A06">U </font>
-54. <font color="#4E9A06">V </font>
-55. <font color="#4E9A06">W </font>
-56. <font color="#4E9A06">X </font>
-57. <font color="#4E9A06">Y </font>
-58. <font color="#4E9A06">Z </font>
-59. <font color="#4E9A06">[ </font>
-60. <font color="#4E9A06">\ </font>
-61. <font color="#4E9A06">] </font>
-62. <font color="#4E9A06">^ </font>
-63. <font color="#4E9A06">_ </font>
-64. <font color="#4E9A06">` </font>
-65. <font color="#4E9A06">a </font>
-66. <font color="#4E9A06">b </font>
-67. <font color="#4E9A06">c </font>
-68. <font color="#4E9A06">d </font>
-69. <font color="#4E9A06">e </font>
-70. <font color="#4E9A06">f </font>
-71. <font color="#4E9A06">g </font>
-72. <font color="#4E9A06">h </font>
-73. <font color="#4E9A06">i </font>
-74. <font color="#4E9A06">j </font>
-75. <font color="#4E9A06">k </font>
-76. <font color="#4E9A06">l </font>
-77. <font color="#4E9A06">m </font>
-78. <font color="#4E9A06">n </font>
-79. <font color="#4E9A06">o </font>
-80. <font color="#4E9A06">p </font>
-81. <font color="#4E9A06">q </font>
-82. <font color="#4E9A06">r </font>
-83. <font color="#4E9A06">s </font>
-84. <font color="#4E9A06">t </font>
-85. <font color="#4E9A06">u </font>
-86. <font color="#4E9A06">v </font>
-87. <font color="#4E9A06">w </font>
-88. <font color="#4E9A06">x </font>
-89. <font color="#4E9A06">y </font>
-90. <font color="#4E9A06">z </font>
-91. <font color="#4E9A06">{ </font>
-92. <font color="#4E9A06">| </font>
-93. <font color="#4E9A06">} </font>
+1. <font>! </font>
+2. <font>&quot; </font>
+3. <font># </font>
+4. <font>$ </font>
+5. <font>% </font>
+6. <font>&amp; </font>
+7. <font>&apos; </font>
+8. <font>( </font>
+9. <font>) </font>
+10. <font>* </font>
+11. <font>+ </font>
+12. <font>, </font>
+13. <font>- </font>
+14. <font>. </font>
+15. <font>/ </font>
+16. <font>0 </font>
+17. <font>1 </font>
+18. <font>2 </font>
+19. <font>3 </font>
+20. <font>4 </font>
+21. <font>5 </font>
+22. <font>6 </font>
+23. <font>7 </font>
+24. <font>8 </font>
+25. <font>9 </font>
+26. <font>: </font>
+27. <font>; </font>
+28. <font>&lt; </font>
+29. <font>= </font>
+30. <font>&gt; </font>
+31. <font>? </font>
+32. <font>@ </font>
+33. <font>A </font>
+34. <font>B </font>
+35. <font>C </font>
+36. <font>D </font>
+37. <font>E </font>
+38. <font>F </font>
+39. <font>G </font>
+40. <font>H </font>
+41. <font>I </font>
+42. <font>J </font>
+43. <font>K </font>
+44. <font>L </font>
+45. <font>M </font>
+46. <font>N </font>
+47. <font>O </font>
+48. <font>P </font>
+49. <font>Q </font>
+50. <font>R </font>
+51. <font>S </font>
+52. <font>T </font>
+53. <font>U </font>
+54. <font>V </font>
+55. <font>W </font>
+56. <font>X </font>
+57. <font>Y </font>
+58. <font>Z </font>
+59. <font>[ </font>
+60. <font>\ </font>
+61. <font>] </font>
+62. <font>^ </font>
+63. <font>_ </font>
+64. <font>` </font>
+65. <font>a </font>
+66. <font>b </font>
+67. <font>c </font>
+68. <font>d </font>
+69. <font>e </font>
+70. <font>f </font>
+71. <font>g </font>
+72. <font>h </font>
+73. <font>i </font>
+74. <font>j </font>
+75. <font>k </font>
+76. <font>l </font>
+77. <font>m </font>
+78. <font>n </font>
+79. <font>o </font>
+80. <font>p </font>
+81. <font>q </font>
+82. <font>r </font>
+83. <font>s </font>
+84. <font>t </font>
+85. <font>u </font>
+86. <font>v </font>
+87. <font>w </font>
+88. <font>x </font>
+89. <font>y </font>
+90. <font>z </font>
+91. <font>{ </font>
+92. <font>| </font>
+93. <font>} </font>
 </pre>
 
     <script>
       var i = 0;
-      var txt = '` 1 2 3 4 5 6 7 8 9 0 - = q w e r t y u i o p [ ] \ a s d f g h j k l ; \' z x c v b n m , . / ! @ # $ % ^ & * ( ) _ + Q W E R T Y\nU I O P { } | A S D F G H J K L : " Z X C V B N M < > ?'; /* The text */
+      var txt = '` 1 2 3 4 5 6 7 8 9 0 - = q w e r t y u i o p [ ] \\ a s d f g h j k l ; \' z x c v b n m , . / ! @ # $ % ^ & * ( ) _ + Q W E R T Y\nU I O P { } | A S D F G H J K L : " Z X C V B N M < > ?'; /* The text */
       var speed = 10; /* The speed/duration of the effect in milliseconds */
 
       function typeWriter() {
