@@ -25,19 +25,19 @@
 #   numbers are the second priority and are sorted second.
 #   alphabets are the third priority and are sorted third (UPPERCASE are sorted before lowercase).
 
-#   names are to be entered as 'Hemanya-Sharma' or 'Rob-Mctodd' not 'rob-McTodd' or 'hemanyA sHarMA'
+#   names are to be entered as 'Hemanya-Sharma' or 'Rob-Mctodd' not 'roB-McTodd' or 'hemanyA sHarMA'
 
 """
 
 
 author = "Hemanya Sharma"
 version = "1.0.1 - Build 1.2"
-yelp = "Program to alphabetically sort the words from a string provided by the user"
+yelp = "Program to alphabetically sort the words from a string provided by the user."
 
 class colors:
-    ENDC = '\033[m'
     GREEN = '\033[32m'
     RED = '\033[31m'
+    ENDC = '\033[m'
 
 def sort (yer_word):
     num = 1
@@ -62,5 +62,6 @@ def mains ():
 
 if (__name__ == '__main__'):
     mains ()
+
 
 ################
