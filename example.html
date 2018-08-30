@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <title>WordSorter Example</title>
+    <title>WordSorter Example / ℂ◉℗⒴ ℘ⓐṨͲℰ</title>
 
     <style>
       pre {
@@ -23,25 +23,39 @@
       }
       h1 {
           color: Red;
-          
-          
+      }
+
+        summary {
+            color: white;
+
+
+        }
+
+
+
+
+
+
+
+
         }
 
     </style>
   </head>
 
-  <body OnLoad="typeWriter()">
+  <body>
 
 
     <div style="text-align: center; font-family: 'Ubuntu';">
-      <h1>WordSorter</h1>
+      <h1>WordSorter ℂ◉℗⒴ ℘ⓐṨͲℰ</h1>
     </div>
 
+      <details><summary OnClick="typeWriter()">Click here for live example with all the words sorted</summary>
 
     <pre>Enter the words to sort: <font id='demo' style="color: #ffffff;"></font>
 The sorted words are:
 
-1. <font>! </font>
+<pre>1. <font>! </font>
 2. <font>&quot; </font>
 3. <font># </font>
 4. <font>$ </font>
@@ -134,11 +148,15 @@ The sorted words are:
 91. <font>{ </font>
 92. <font>| </font>
 93. <font>} </font>
+94. <font>~ </font>
 </pre>
+
+      </details>
+      <iframe src="https://trinket.io/embed/python/d1cb04b858" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
     <script>
       var i = 0;
-      var txt = '` 1 2 3 4 5 6 7 8 9 0 - = q w e r t y u i o p [ ] \\ a s d f g h j k l ; \' z x c v b n m , . / ! @ # $ % ^ & * ( ) _ + Q W E R T Y\nU I O P { } | A S D F G H J K L : " Z X C V B N M < > ?'; /* The text */
+      var txt = '` ~ 1 2 3 4 5 6 7 8 9 0 - = q w e r t y u i o p [ ] \\ a s d f g h j k l ; \' z x c v b n m , . / ! @ # $ % ^ & * ( ) _ + Q W E R T Y\nU I O P { } | A S D F G H J K L : " Z X C V B N M < > ?'; /* The text */
       var speed = 10; /* The speed/duration of the effect in milliseconds */
 
       function typeWriter() {
